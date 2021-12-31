@@ -99,9 +99,14 @@
 
         display: flex;
         flex-direction: column;
-        align-items: center;
         margin: 0 auto;
-        max-width: 1150px;
+        width: 1150px;
+
+        @media screen and (max-width:1200px) { 
+            align-items: center;
+            width: unset;
+            max-width: 1150px;
+        }
 
         .services__title__info {
 
@@ -138,10 +143,12 @@
 
             display: flex;
             flex-wrap: wrap;
-            max-width: 1150px;
+            width: 1180px;
 
             @media screen and (max-width:1200px) { 
                 justify-content: space-around;
+                max-width: 1150px;
+                width: auto;
             }
 
             .service {
@@ -197,6 +204,7 @@
 
                     img {
                         border-radius: 5px;
+                        width: 350px;
 
                         @media screen and (max-width:576px) { 
                             width: 100%;

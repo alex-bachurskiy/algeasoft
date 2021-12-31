@@ -72,7 +72,7 @@ export default {
         }
 
         .header__logo__container {
-            margin-right: 270px;
+            margin-right: 388px;
 
             @media screen and (max-width:1200px) { 
                 margin-right: 0;

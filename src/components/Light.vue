@@ -46,7 +46,7 @@
         display: flex;
         height: 150px;
         justify-content: space-between;
-        max-width: 1506px;
+        max-width: 1520px;
         margin: 0 auto;
 
         .consultation__title__container {

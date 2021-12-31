@@ -89,6 +89,24 @@ export default {
         justify-content: center;
         margin: 100px 100px 0 100px;
 
+        @media screen and (max-width: 1200px) {
+            margin-left: 20px;
+        }
+
+        @media screen and (max-width:992px) { 
+            margin-bottom: 80px;
+        }
+
+        @media screen and (max-width:768px) { 
+            margin-left: 50px;
+        }
+
+        @media screen and (max-width:576px) { 
+            margin-right: 25px;
+            margin-left: 25px;
+            text-align: center;
+        }
+
         .questions_and_answers__navigation__container {
             font-size: 16px;
             line-height: 110%;
@@ -116,12 +134,23 @@ export default {
             flex-wrap: wrap;
             margin-bottom: 231px;
 
+            @media screen and (max-width:576px) { 
+                justify-content: center;
+            }
+
             .dropdown {
                 position: relative;
                 display: inline-block;
                 margin-right: 20px;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
 
+                @media screen and (max-width: 1200px) {
+                    margin-right: 40px;
+                }
+
+                @media screen and (max-width:576px) { 
+                    margin-right: 0;
+                }
 
 	            &:hover {
                     .dropdown-content {
@@ -135,6 +164,10 @@ export default {
 
                 &:nth-child(7) {
                     margin-bottom: 0;
+
+                    @media screen and (max-width:576px) { 
+                        margin-bottom: 10px;
+                    }
                 }
 
                 &:nth-child(8) {
@@ -162,6 +195,20 @@ export default {
                     width: 564px;
                     text-align: left;
 
+                    @media screen and (max-width: 1200px) {
+                        padding: 10px 0 10px 15px;
+                        width: 400px;
+                    }
+
+                    @media screen and (max-width:992px) {
+                        height: 100px;
+                        max-width: 245px;
+                    }
+
+                    @media screen and (max-width:576px) { 
+                        max-width: 245px;
+                    }
+
                     &::after {
                         content: url("../assets/pictures/arrow-right(black).png");
                         margin-right: 33px;
@@ -179,6 +226,20 @@ export default {
                     border-right: 1px solid #000;
                     border-bottom-left-radius: 5px;
                     border-bottom-right-radius: 5px;
+
+                    @media screen and (max-width: 1200px) {
+                        bottom: -210px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+
+                    @media screen and (max-width:992px) {
+                        bottom: -355px;
+                    }
+
+                    @media screen and (max-width:576px) { 
+                        text-align: start;
+                    }
 
                     z-index: 1;
                     a {

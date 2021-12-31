@@ -97,6 +97,15 @@ export default {
         
         margin: 100px 0 129px 100px;
 
+        @media screen and (max-width: 1200px) {
+            margin-left: 20px;
+        }
+
+        @media screen and (max-width:576px) { 
+           margin-right: 0;
+           margin-left: 0;
+        }
+
         .contacts__navigation__container {
             font-size: 16px;
             line-height: 110%;
@@ -107,6 +116,10 @@ export default {
             .menu-item {
                 color: rgba(0, 0, 0, 0.25);
             }
+
+            @media screen and (max-width:576px) { 
+                text-align: center;
+            }
         }
 
         .contacts__title__container {
@@ -116,12 +129,22 @@ export default {
                 font-size: 44px;
                 line-height: 130%;
                 color: #219653;
+
+                @media screen and (max-width:576px) { 
+                    text-align: center;
+                }
             }
         }
 
         .contacts__main__container {
 
             display: flex;
+
+            @media screen and (max-width:576px) { 
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+            }
 
             .connection {
                 margin-bottom: 25px;
@@ -166,6 +189,23 @@ export default {
                 color: #333333;
                 width: 384px;
                 margin-left: 267px;
+
+                @media screen and (max-width: 992px) {
+                    margin-left: 70px;
+                }
+
+                @media screen and (max-width:768px) { 
+                    margin-left: 80px;
+                }
+
+                @media screen and (max-width:576px) { 
+                    margin-top: 40px;
+                    margin-left: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                }
 
                 .contacts__main__information__title {
                     font-weight: 900;
