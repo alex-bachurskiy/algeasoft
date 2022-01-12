@@ -160,6 +160,12 @@ export default {
         }
 
         .header__button {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: #219653;
+            transition: all 2s ease-out;
+
             display: flex;
             justify-content: center;
             background: transparent;
@@ -169,6 +175,7 @@ export default {
             backdrop-filter: blur(10px);
             border-radius: 5px;
             transition: all 2s ease-out;
+            cursor: pointer;
             height: 46px;
             width: 190px;
 
@@ -179,18 +186,7 @@ export default {
             &:hover {
                 background: #f5f6fa;
                 border-color: #44bd32;
-            }
-
-            a {
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 19px;
-                color: #219653;
-                transition: all 2s ease-out;
-
-                &:hover {
-                    color: #44bd32;
-                }
+                color: #44bd32;
             }
         }
     }
