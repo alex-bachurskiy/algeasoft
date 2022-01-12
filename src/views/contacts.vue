@@ -101,9 +101,10 @@ export default {
             margin-left: 20px;
         }
 
-        @media screen and (max-width:576px) { 
-           margin-right: 0;
-           margin-left: 0;
+        @media screen and (max-width:576px) {
+            margin-top: 50px;
+            margin-right: 0;
+            margin-left: 0;
         }
 
         .contacts__navigation__container {

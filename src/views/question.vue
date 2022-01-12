@@ -101,9 +101,10 @@ export default {
             margin-left: 50px;
         }
 
-        @media screen and (max-width:576px) { 
-            margin-right: 25px;
-            margin-left: 25px;
+        @media screen and (max-width:576px) {
+            margin-top: 50px; 
+            margin-right: 0;
+            margin-left: 0;
             text-align: center;
         }
 

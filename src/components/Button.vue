@@ -3,10 +3,10 @@
         <div class="container">
             <div class="main__button__container">
                 <div class="first__button">
-                    <router-link to="">Заказать решение</router-link>
+                    <router-link to="/technical-support">Заказать решение</router-link>
                 </div>
                 <div class="second__button">
-                    <router-link to="">Попробовать бесплатно</router-link>
+                    <router-link to="/technical-support">Попробовать бесплатно</router-link>
                     <img src="@/assets/pictures/arrow-right.png" alt="arrow">
                 </div> 
             </div>

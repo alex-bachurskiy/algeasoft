@@ -225,6 +225,10 @@ export default {
         background: linear-gradient(0deg, #000000, #000000);
         margin-bottom: 160px;
 
+        @media screen and (max-width:576px) { 
+            margin-bottom: 60px;
+        }
+
         .container {
             @media screen and (max-width:1200px) { 
                  width: auto;
@@ -233,7 +237,15 @@ export default {
 
         .benefits__component {
             position: relative;
-            top: 133px;
+            top: 130px;
+
+            @media screen and (max-width:1200px) { 
+                top: 75px;
+            }
+            
+            @media screen and (max-width:992px) { 
+                top: 50px;
+            }
         }
 
         &__container {
@@ -256,7 +268,6 @@ export default {
 
             @media screen and (max-width:992px) { 
                 background-position-y: center;
-                height: 500px;
             }
 
             @media screen and (max-width:768px) { 
@@ -288,6 +299,10 @@ export default {
                 
                 margin-bottom: 60px;
 
+                    @media screen and (max-width:1200px) { 
+                        max-width: 470px;
+                    }
+
                 @media screen and (max-width:768px) { 
                     display: flex;
                     flex-direction: column;
@@ -309,7 +324,11 @@ export default {
                     line-height: 130%;
                     letter-spacing: 0.03em;
                     color: #FFFFFF;
-                    width: 390px;
+                    max-width: 390px;
+
+                    @media screen and (max-width:556px) { 
+                        padding: 0 15px;
+                    }
                 }
             }
         }
@@ -323,9 +342,18 @@ export default {
         margin: 0 auto;
         max-width: 1420px;
 
+        @media screen and (max-width:1200px) { 
+            padding-top: 50px;
+        }
+
+        @media screen and (max-width:556px) { 
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
         .container {
             @media screen and (max-width:1200px) { 
-                 width: auto;
+                width: auto;
             }
         }
 
@@ -335,8 +363,11 @@ export default {
             border-radius: 5px;
             margin-bottom: 10px;
 
+            @media screen and (max-width:768px) { 
+                text-align: center;
+            }
+
             .sofware__title {
-                
                 margin-left: 20px;
                 padding-top: 10px;
                 padding-bottom: 10px;
@@ -344,6 +375,10 @@ export default {
                 font-size: 45px;
                 line-height: 53px;
                 color: #FFFFFF;
+
+                @media screen and (max-width:556px) { 
+                    margin-left: 0;;
+                }
             }
         }
 
@@ -351,8 +386,13 @@ export default {
 
             width: 435px;
             margin-bottom: 70px;
-            .sowtware__paragraph__paragraph {
 
+            @media screen and (max-width:768px) { 
+                text-align: center;
+                width: auto;
+            }
+
+            .sowtware__paragraph__paragraph {
                 font-size: 16px;
                 line-height: 130%;
                 letter-spacing: 0.03em;
@@ -380,6 +420,10 @@ export default {
 
             display: flex;
             margin-bottom: 60px;
+            
+            @media screen and (max-width:992px) { 
+                flex-direction: column;
+            }
 
             .list {
 
@@ -389,15 +433,24 @@ export default {
                 line-height: 110%;
                 letter-spacing: 0.03em;
                 margin-right: 15px;
-                width: 415px;
+                max-width: 415px;
                 
+                @media screen and (max-width:556px) { 
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+
                 &:nth-child(2) {
-                    width: 285px;
+                    max-width: 285px;
                 }
 
                 &:last-of-type {
                     margin-right: 0;
-                    width: 440px;
+                    max-width: 440px;
+
+                    @media screen and (max-width:556px) { 
+                        margin-bottom: 0;
+                    }
                 }
 
                 &::before {
@@ -423,6 +476,10 @@ export default {
                 line-height: 130%;
                 letter-spacing: 0.03em;
                 color: #333333;
+
+                @media screen and (max-width:556px) { 
+                    text-align: center;
+                }
             }
         }
 
@@ -513,14 +570,26 @@ export default {
                             }
 
                             @media screen and (max-width:992px) { 
-                                max-width: 515px;
+                                max-width: 460px;
+                            }
+
+                            @media screen and (max-width:768px) { 
+                                max-width: 407px;
+                            }
+
+                            
+                            @media screen and (max-width:556px) { 
+                                padding-right: 10px;
                             }
 
                             .basic__named__title {
-
                                 font-size: 16px;
                                 line-height: 130%;
                                 letter-spacing: 0.03em;
+
+                                @media screen and (max-width:992px) { 
+                                    font-size: 12px;
+                                }
                             }
                         }
 
@@ -533,7 +602,17 @@ export default {
                             backdrop-filter: blur(10px);
                             margin-left: 10px;
                             border-radius: 5px;
-                            width: 161px;
+                            max-width: 161px;
+
+                            @media screen and (max-width:1200px) { 
+                                padding-right: 15px;
+                                padding-left: 15px;
+                            }
+
+                            @media screen and (max-width:556px) { 
+                                align-items: center;
+                                padding: 11px 10px;
+                            }
 
                             a {
                                 font-weight: 500;
@@ -619,9 +698,16 @@ export default {
                                 max-width: 665px;
                             }
 
-                            
                             @media screen and (max-width:992px) { 
-                                max-width: 515px;
+                                max-width: 460px;
+                            }
+
+                            @media screen and (max-width:768px) { 
+                                max-width: 407px;
+                            }
+
+                            @media screen and (max-width:556px) { 
+                                padding-right: 10px;
                             }
 
                             .standart__named__title {
@@ -629,6 +715,11 @@ export default {
                                 font-size: 16px;
                                 line-height: 130%;
                                 letter-spacing: 0.03em;
+
+                                
+                                @media screen and (max-width:992px) { 
+                                    font-size: 12px;
+                                }
                             }
                         }
 
@@ -641,7 +732,17 @@ export default {
                             backdrop-filter: blur(10px);
                             margin-left: 10px;
                             border-radius: 5px;
-                            width: 161px;
+                            max-width: 161px;
+
+                            @media screen and (max-width:1200px) { 
+                                padding-right: 15px;
+                                padding-left: 15px;
+                            }
+
+                            @media screen and (max-width:556px) { 
+                                align-items: center;
+                                padding: 5px 10px;
+                            }
 
                             a {
                                 font-weight: 500;

@@ -85,6 +85,12 @@
             padding-left: 50px;
         }
 
+        @media screen and (max-width:576px) {
+            padding-top: 50px; 
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
         .tasks__title__container {
 
             .tasks__title {

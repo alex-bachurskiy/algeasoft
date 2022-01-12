@@ -134,9 +134,24 @@ export default {
         background: linear-gradient(0deg, #000000, #000000);
         margin-bottom: 160px;
 
+        .container {
+            @media screen and (max-width:1200px) { 
+                width: auto;
+            }
+        }
+
         .benefits__component {
             position: relative;
             top: 110px;
+            
+                        
+            @media screen and (max-width:992px) { 
+                top: 90px;
+            }
+
+            @media screen and (max-width:768px) { 
+                top: 60px;
+            }
         }
 
         &__container {
@@ -150,6 +165,30 @@ export default {
             margin: 0 auto;
             height: 542px;
             max-width: 1506px;
+
+            @media screen and (max-width:1200px) { 
+                padding-top: 50px;
+                padding-bottom: 50px;
+                padding-left: 50px;
+                height: 565px;
+            }
+
+            @media screen and (max-width:992px) { 
+                height: 525px;
+            }
+
+            @media screen and (max-width:768px) { 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 0;
+            }
+
+            @media screen and (max-width:576px) { 
+                background-size: cover;
+                background-position: center;
+                height: 630px;
+            }
 
             .banner__navigation__container {
 
@@ -168,6 +207,15 @@ export default {
             .banner__text {
                 
                 margin-bottom: 60px;
+                
+                @media screen and (max-width:768px) { 
+                    text-align: center;
+                }
+
+                @media screen and (max-width:576px) { 
+                    margin-right: 20px;
+                    margin-left: 20px;
+                }
 
                 .banner__title {
                     font-weight: 500;
@@ -183,7 +231,11 @@ export default {
                     line-height: 130%;
                     letter-spacing: 0.03em;
                     color: #FFFFFF;
-                    width: 390px;
+                    max-width: 390px;
+
+                    @media screen and (max-width:768px) { 
+                        margin: 0 auto;
+                    }
                 }
             }
         }
@@ -195,6 +247,25 @@ export default {
         padding-left: 100px;
         padding-right: 84px;
 
+        @media screen and (max-width:1200px) { 
+            padding-right: 50px;
+        }
+
+        @media screen and (max-width:768px) { 
+            padding-left: 50px;
+        }
+
+        @media screen and (max-width:576px) { 
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .container {
+            @media screen and (max-width:1200px) { 
+                width: auto;
+            }
+        }
+
         .ai__projects {
 
             .ai__projects__title__container {
@@ -203,6 +274,11 @@ export default {
                 border-radius: 5px;
                 margin-bottom: 40px;
                 padding: 10px 0 10px 20px;
+
+                @media screen and (max-width:576px) { 
+                    text-align: center;
+                    padding-left: 0px;
+                }
 
                 .ai__projects__title {
 
@@ -220,6 +296,12 @@ export default {
                     display: flex;
                     margin-bottom: 44px;
 
+                   
+                    @media screen and (max-width:576px) { 
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+
                     &:last-of-type {
                         margin-bottom: 0;
                     }
@@ -234,9 +316,23 @@ export default {
                         justify-content: center;
                         margin-right: 20px;
                         padding: 64px 0;
+
+                        @media screen and (max-width:1200px) { 
+                            background-size: cover;
+                        }
+
+                        @media screen and (max-width:576px) { 
+                            min-width: 270px;
+                            margin-right: 0;
+                            margin-bottom: 20px;
+                        }
                     }
 
                     .ai__project__info {
+
+                        @media screen and (max-width:576px) { 
+                            max-width: 295px;
+                        }
 
                         .ai__project__title {
                             font-weight: 900;

@@ -28,7 +28,7 @@
                         <a href="tel:+38 (000)000 00 00" class="tel">+38 (000)000 00 00</a>
                     </div>
                     <div class="footer__button">
-                        <router-link to="">
+                        <router-link to="/technical-support">
                             Заказать звонок
                         </router-link>
                     </div>

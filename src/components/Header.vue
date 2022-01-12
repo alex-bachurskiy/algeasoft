@@ -16,11 +16,10 @@
                         <a href="tel:+38 (000)000 00 00" class="tel">+38 (000)000 00 00</a>
                     </div>
                 </div>
-                <div class="header__button">
-                    <router-link to="">
-                        Заказать звонок
-                    </router-link>
-                </div>
+                <div class="header__button" @click="showPopup(true)"> Заказать звонок </div>
+                <transition name="fade">
+                    <modal-window v-if="isPopup" @showPopup="showPopup"></modal-window>
+                </transition>
             </div>
         </div>
     </div>
@@ -28,11 +27,23 @@
 
 <script>
 import BurgerMenu from "../components/Burger";
+import ModalWindow from "../components/Call";
 
 export default {
     name: "header",
     components: {
-        BurgerMenu
+        BurgerMenu,
+        ModalWindow
+    },
+    data () {
+        return {
+            isPopup: false
+        };
+    },
+    methods: {
+        showPopup (event) {
+            this.isPopup = event;
+        }
     }
 };
 </script>
@@ -44,6 +55,7 @@ export default {
     height: 100px;
     display: flex;
     align-items: center;
+    background: #FFFFFF;
 
     @media screen and (max-width:576px) { 
       height: 250px;

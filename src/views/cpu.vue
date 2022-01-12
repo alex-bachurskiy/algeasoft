@@ -474,7 +474,7 @@
             </div>
         </div>
         <Trust/>
-        <Reviews/>
+
         <Partners/>
         <Dark/>
         <Footer/>
@@ -517,11 +517,24 @@ export default {
         background: linear-gradient(0deg, #000000, #000000);
         margin-bottom: 160px;
 
+        @media screen and (max-width:576px) { 
+            margin-bottom: 60px;
+        }
+
         .benefits__component {
             position: relative;
             top: 110px;
+
+            @media screen and (max-width:992px) { 
+                top: 60px;
+            }
         }
 
+        .container {
+            @media screen and (max-width:1200px) { 
+                width: auto;
+            }
+        }
 
         &__container {
             background-image: url(../assets/pictures/service4_background.png);
@@ -534,6 +547,29 @@ export default {
             margin: 0 auto;
             height: 542px;
             max-width: 1506px;
+
+            @media screen and (max-width:1200px) { 
+                padding-top: 50px;
+                padding-bottom: 50px;
+                padding-left: 50px;
+                height: 565px;
+            }
+
+            @media screen and (max-width:992px) { 
+                background-position-y: center;
+                height: 525px;
+            }
+
+            @media screen and (max-width:768px) { 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 0;
+            }
+
+            @media screen and (max-width:576px) { 
+                height: auto;
+            }
 
             .banner__navigation__container {
 
@@ -553,12 +589,25 @@ export default {
                 
                 margin-bottom: 60px;
 
+                @media screen and (max-width:768px) { 
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+
                 .banner__title {
                     font-weight: 500;
                     font-size: 44px;
                     line-height: 130%;
                     color: #219653;
                     margin-bottom: 10px;
+
+                    @media screen and (max-width:576px) { 
+                        width: auto;
+                        font-size: 35px;
+                        padding: 0 20px;
+                    }
                 }
 
                 .banner__info {
@@ -568,6 +617,10 @@ export default {
                     letter-spacing: 0.03em;
                     color: #FFFFFF;
                     width: 390px;
+
+                    @media screen and (max-width:576px) { 
+                        width: 305px;
+                    }
                 }
             }
         }
@@ -575,12 +628,26 @@ export default {
 
     .intel_xeon_scalable {
 
+        .container {
+            @media screen and (max-width:1200px) { 
+                width: auto;
+            }
+        }
+
         .intel_xeon_scalable__header {
             margin: 0 auto;
             max-width: 1420px;
             padding-left: 100px;
             padding-right: 100px;
             margin-bottom: 50px;
+
+            @media screen and (max-width:992px) { 
+                padding: 0 50px;
+            }
+
+            @media screen and (max-width:576px) { 
+                padding: 0 20px;
+            }
 
             .intel_xeon_scalable__header__title__container {
                 background: #219653;
@@ -593,26 +660,41 @@ export default {
                     line-height: 53px;
                     color: #FFFFFF;
                     margin: 10px 0 10px 20px;
+
+                    @media screen and (max-width:576px) { 
+                        font-size: 30px;
+                        text-align: center;
+                        margin: 10px;
+                    }
                 }
             }
 
             .intel_xeon_scalable__header__paragraph__container {
 
                 .intel_xeon_scalable__header__paragraph {
-
                     font-size: 16px;
                     line-height: 130%;
                     letter-spacing: 0.03em;
                     color: #333333;
                     margin-bottom: 55px;
-                    width: 435px;
+                    max-width: 435px;
+
+                    @media screen and (max-width:576px) { 
+                        text-align: center;
+                    }
                 }
             }
 
             .intel_xeon_scalable__header__perfomance__container {
                 display: flex;
                 align-items: center;
-                width: 600px;
+                max-width: 600px;
+
+                @media screen and (max-width:576px) { 
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    text-align: center;
+                }
 
                 img {
                     transform: rotate(-20.13deg);
@@ -646,6 +728,15 @@ export default {
             max-width: 1506px;
             margin: 0 auto;
 
+            @media screen and (max-width:1200px) { 
+                padding: 35px 0 35px 0;
+            }
+
+            @media screen and (max-width:576px) { 
+                height: auto;
+                background-size: cover;
+            }
+
             .intel_xeon_scable__baner__info {
 
                 .intel_xeon_scable__baner__title {
@@ -656,9 +747,19 @@ export default {
                     letter-spacing: 0.03em;
                     color: #219653;
                     margin-bottom: 45px;
+
+                    
+                    @media screen and (max-width:576px) { 
+                        text-align: center;
+                    }
                 }
 
                 .intel_xeon_scable__baner__paragraph {
+
+                    @media screen and (max-width:576px) { 
+                        margin-left: 25px;
+                        margin-right: 25px;
+                    }
 
                     .baner__paragraph {
 
@@ -695,11 +796,19 @@ export default {
             display: flex;
             justify-content: center;
 
+            @media screen and (max-width:992px) { 
+                padding: 0 50px;
+            }
+
             .intel_xeon_scalable__paragraph {
                 font-size: 16px;
                 line-height: 130%;
                 letter-spacing: 0.03em;
                 color: #333333;
+
+                @media screen and (max-width:576px) { 
+                    text-align: center;
+                }
             }
         }
 
@@ -710,10 +819,20 @@ export default {
             flex-direction: column;
             justify-content: center;
             padding: 0 100px;
+            margin-bottom: 63px;
+
+            @media screen and (max-width:992px) { 
+                padding: 0 50px;
+            }
+
+            @media screen and (max-width:576px) { 
+                display: none;
+            }
 
             .intel_xeon_scalable_available_configuration__title__container {
                 display: flex;
                 flex-direction: column;
+                margin-bottom: 30px;
 
                 .intel_xeon_scalable_available_configuration__title {
                     text-align: center;
@@ -788,8 +907,7 @@ export default {
                         display: flex;
                         color: #333333;
                         padding-top: 13px;
-                        width: 1069px;
-
+                        max-width: 1069px;
                     }
                     
                     .basic__information__title,
@@ -800,12 +918,23 @@ export default {
                         font-size: 16px;
                         line-height: 19px;
 
+                        @media screen and (max-width:1200px) { 
+                            margin-right: 105px;
+                        }
+
+                        @media screen and (max-width:992px) { 
+                            margin-right: 85px;
+                        }
+
+                        @media screen and (max-width:768px) { 
+                            margin-right: 65px;
+                        }
+
                         &:first-child {
                             margin-left: 10px;
                         }
 
                         &:last-child {
-
                             margin-right: 50px;
                         }
                     }
@@ -817,18 +946,66 @@ export default {
                         &:first-child {
                             margin-left: 26px;
                             margin-right: 260px;
+
+                            @media screen and (max-width:1200px) { 
+                                margin-right: 150px;
+                            }
+                            
+                            @media screen and (max-width:992px) { 
+                                margin-right: 120px;
+                            }
+
+                            @media screen and (max-width:768px) { 
+                                margin-right: 100px;
+                            }
                         }
 
                         &:nth-child(2) {
                             margin-right: 240px;
+
+                            @media screen and (max-width:1200px) { 
+                                margin-right: 125px;
+                            }
+
+                            @media screen and (max-width:992px) { 
+                                margin-right: 110px;
+                            }
+
+                            @media screen and (max-width:768px) { 
+                                margin-right: 90px;
+                            }
                         }
 
                         &:nth-child(3) {
                             margin-right: 251px;
+
+                            @media screen and (max-width:1200px) { 
+                                margin-right: 140px;
+                            }
+                                                        
+                            @media screen and (max-width:992px) { 
+                                margin-right: 115px;
+                            }
+                            
+                            @media screen and (max-width:768px) { 
+                                margin-right: 95px;
+                            }
                         }
 
                         &:nth-child(4) {
-                            margin-right: 73px;
+                            margin-right: 139px;
+
+                            @media screen and (max-width:1200px) { 
+                                margin-right: 75px;
+                            }
+                                                        
+                            @media screen and (max-width:992px) { 
+                                margin-right: 62px;
+                            }
+                            
+                            @media screen and (max-width:768px) { 
+                                margin-right: 50px;
+                            }
                         }
                     }
 
@@ -876,6 +1053,12 @@ export default {
     }
 
     .amd_epyc {
+        
+        .container {
+            @media screen and (max-width:1200px) { 
+                width: auto;
+            }
+        }
 
         .amd_epyc__header {
             margin: 0 auto;
@@ -883,6 +1066,14 @@ export default {
             padding-left: 100px;
             padding-right: 100px;
             margin-bottom: 50px;
+
+            @media screen and (max-width:992px) { 
+                padding: 0 50px;
+            }
+            
+            @media screen and (max-width:576px) { 
+                padding: 0 20px;
+            }
 
             .amd_epyc__header__title__container {
                 background: #219653;
@@ -895,26 +1086,41 @@ export default {
                     line-height: 53px;
                     color: #FFFFFF;
                     margin: 10px 0 10px 20px;
+
+                    @media screen and (max-width:576px) { 
+                        font-size: 32px;
+                        text-align: center;
+                        margin: 10px;
+                    }
                 }
             }
 
             .amd_epyc__header__paragraph__container {
 
                 .amd_epyc__header__paragraph {
-
                     font-size: 16px;
                     line-height: 130%;
                     letter-spacing: 0.03em;
                     color: #333333;
                     margin-bottom: 55px;
-                    width: 435px;
+                    max-width: 435px;
+
+                    @media screen and (max-width:576px) { 
+                        text-align: center;
+                    }
                 }
             }
 
             .amd_epyc__header__perfomance__container {
                 display: flex;
                 align-items: center;
-                width: 600px;
+                max-width: 600px;
+
+                @media screen and (max-width:576px) { 
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    text-align: center;
+                }
 
                 img {
                     transform: rotate(-20.13deg);
@@ -948,6 +1154,12 @@ export default {
             max-width: 1506px;
             margin: 0 auto;
 
+            @media screen and (max-width:576px) { 
+                height: auto;
+                background-size: cover;
+                padding-right: 0;
+            }
+
             .amd_epyc__baner__info {
 
                 .amd_epyc__baner__title {
@@ -958,9 +1170,17 @@ export default {
                     letter-spacing: 0.03em;
                     color: #219653;
                     margin-bottom: 45px;
+
+                    @media screen and (max-width:576px) { 
+                        text-align: center;
+                    }
                 }
 
                 .amd_epyc__baner__paragraph {
+                    
+                    @media screen and (max-width:576px) { 
+                        margin: 0 25px;
+                    }
 
                     .baner__paragraph {
 
@@ -997,11 +1217,19 @@ export default {
             display: flex;
             justify-content: center;
 
+            @media screen and (max-width:992px) { 
+                padding: 0 50px;
+            }
+
             .amd_epyc__paragraph {
                 font-size: 16px;
                 line-height: 130%;
                 letter-spacing: 0.03em;
                 color: #333333;
+
+                @media screen and (max-width:576px) { 
+                    text-align: center;
+                }
             }
         }
     }
@@ -1009,12 +1237,21 @@ export default {
     .cpu_amd_epyc {
         margin-top: 114px;
         margin-bottom: 39px;
+
         .cpu_amd_epyc__header {
             margin: 0 auto;
             max-width: 1420px;
             padding-left: 100px;
             padding-right: 100px;
             margin-bottom: 50px;
+
+            @media screen and (max-width:992px) { 
+                padding: 0 50px;
+            }
+
+            @media screen and (max-width:576px) { 
+                padding: 0 20px;
+            }
 
             .cpu_amd_epyc__header__title__container {
                 background: #219653;
@@ -1027,10 +1264,20 @@ export default {
                     line-height: 53px;
                     color: #FFFFFF;
                     margin: 10px 0 10px 20px;
+
+                    @media screen and (max-width:576px) { 
+                        font-size: 30px;
+                        text-align: center;
+                        margin-left: 0;
+                    }
                 }
             }
 
             .cpu_amd_epyc__header__paragraph__container {
+                
+                @media screen and (max-width:576px) { 
+                    text-align: center;
+                }
 
                 .cpu_amd_epyc__header__paragraph {
 
@@ -1039,14 +1286,20 @@ export default {
                     letter-spacing: 0.03em;
                     color: #333333;
                     margin-bottom: 55px;
-                    width: 435px;
+                    max-width: 435px;
                 }
             }
 
             .cpu_amd_epyc__header__perfomance__container {
                 display: flex;
                 align-items: center;
-                width: 600px;
+                max-width: 600px;
+
+                @media screen and (max-width:576px) { 
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    text-align: center;
+                }
 
                 img {
                     transform: rotate(-20.13deg);
@@ -1072,6 +1325,16 @@ export default {
             margin-bottom: 60px;
             padding-left: 100px;
 
+            @media screen and (max-width:992px) { 
+                padding-left: 50px;
+            }
+
+                            
+            @media screen and (max-width:576px) { 
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
             .cpu_amd_epyc__feature__title {
 
                 font-weight: 900;
@@ -1079,6 +1342,10 @@ export default {
                 line-height: 29px;
                 color: #219653;
                 margin-bottom: 45px;
+
+                @media screen and (max-width:576px) {
+                    text-align: center;
+                }
             }
 
             .cpu_amd_epyc__features {
@@ -1088,7 +1355,11 @@ export default {
                 color: #333333;
                 font-weight: 400;
                 display: flex;
-                    
+                
+                @media screen and (max-width:576px) { 
+                    flex-direction: column;
+                }
+
                 .feature {
 
                     display: flex;
@@ -1106,7 +1377,11 @@ export default {
                 &__right-container {
 
                     margin-right: 105px;
-                    width: 505px;
+                    max-width: 505px;
+
+                    @media screen and (max-width:576px) { 
+                        margin-right: 0;
+                    }
 
                     .feature {
                             
@@ -1128,6 +1403,16 @@ export default {
             margin-bottom: 81px;
             display: flex;
             justify-content: center;
+
+            @media screen and (max-width:992px) { 
+                padding: 0 50px;
+            }
+
+            @media screen and (max-width:576px) {
+                text-align: center;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
 
             .cpu_amd_epyc__paragraph {
                 font-size: 16px;

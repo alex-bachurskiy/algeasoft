@@ -300,9 +300,24 @@ export default {
         background: linear-gradient(0deg, #000000, #000000);
         margin-bottom: 160px;
 
+        
+        @media screen and (max-width:576px) { 
+            margin-bottom: 60px;
+        }
+
         .benefits__component {
             position: relative;
             top: 87px;
+
+            @media screen and (max-width:992px) { 
+                top: 60px;
+            }
+        }
+
+        .container {
+            @media screen and (max-width:1200px) { 
+                width: auto;
+            }
         }
 
         &__container {
@@ -316,6 +331,30 @@ export default {
             margin: 0 auto;
             height: 544px;
             max-width: 1506px;
+
+            @media screen and (max-width:1200px) { 
+                padding-top: 50px;
+                padding-bottom: 50px;
+                padding-left: 50px;
+                height: 565px;
+            }
+
+            @media screen and (max-width:992px) { 
+                background-position-y: center;
+                height: 525px;
+            }
+
+            @media screen and (max-width:768px) { 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 0;
+            }
+
+            @media screen and (max-width:576px) { 
+                background-size: cover;
+                height: auto;
+            }
 
             .banner__navigation__container {
 
@@ -335,12 +374,25 @@ export default {
                 
                 margin-bottom: 60px;
 
+                @media screen and (max-width:576px) { 
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
                 .banner__title {
                     font-weight: 500;
                     font-size: 44px;
                     line-height: 130%;
                     color: #219653;
                     margin-bottom: 10px;
+
+                    @media screen and (max-width:576px) { 
+                        width: auto;
+                        font-size: 35px;
+                        padding: 0 20px;
+                    }
                 }
 
                 .banner__info {
@@ -350,6 +402,10 @@ export default {
                     letter-spacing: 0.03em;
                     color: #FFFFFF;
                     width: 446px;
+
+                    @media screen and (max-width:576px) { 
+                        width: 305px;
+                    }
                 }
             }
         }
@@ -362,6 +418,27 @@ export default {
         padding-bottom: 69px;
         margin: 0 auto;
         max-width: 1420px;
+
+        @media screen and (max-width:992px) { 
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        @media screen and (max-width:992px) { 
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        @media screen and (max-width:576px) { 
+            text-align: center;
+        }
+
+        .container {
+            @media screen and (max-width:1200px) { 
+                width: auto;
+            }
+        }
+
         .server_placement__title__container {
 
             background: #219653;
@@ -382,7 +459,7 @@ export default {
 
         .server_placement__paragraph__container {
 
-            width: 435px;
+            max-width: 435px;
             margin-bottom: 70px;
             .server_placement__paragraph__paragraph {
 
@@ -413,6 +490,10 @@ export default {
             display: flex;
             margin-bottom: 60px;
 
+            @media screen and (max-width:576px) { 
+                flex-direction: column;
+            }
+
             .list {
 
                 display: flex;
@@ -422,8 +503,12 @@ export default {
                 letter-spacing: 0.03em;
                 margin-right: 15px;
                 max-width: 400px;
-                
 
+                @media screen and (max-width:576px) {
+                    margin-right: 0; 
+                    margin-bottom: 20px;
+                }
+                
                 &::before {
                     content: url(../assets/pictures/check.png);
                     margin-right: 15px;
@@ -442,7 +527,8 @@ export default {
 
         .feature_and_benefits__paragraph__container {
 
-            width: 727px;
+            max-width: 727px;
+
             .feature_and_benefits__paragraph {
                 font-size: 16px;
                 line-height: 130%;
@@ -454,6 +540,10 @@ export default {
 
     .available_configuration__container {
         margin-top: 70px;
+
+        @media screen and (max-width:576px) { 
+            display: none;
+        }
 
         .available_configuration__title__container {
             display: flex;
@@ -525,8 +615,7 @@ export default {
                     display: flex;
                     color: #333333;
                     padding-top: 13px;
-                    width: 1069px;
-
+                    max-width: 1069px;
                 }
                 
                 .basic__information__title,
@@ -535,6 +624,18 @@ export default {
                     font-weight: 500;
                     font-size: 16px;
                     line-height: 19px;
+
+                    @media screen and (max-width:1200px) { 
+                        margin-right: 105px;
+                    }
+
+                    @media screen and (max-width:992px) { 
+                        margin-right: 85px;
+                    }
+
+                    @media screen and (max-width:768px) { 
+                        margin-right: 65px;
+                    }
 
                     &:first-child {
                         margin-left: 10px;
@@ -552,18 +653,66 @@ export default {
                     &:first-child {
                         margin-left: 26px;
                         margin-right: 260px;
+
+                        @media screen and (max-width:1200px) { 
+                            margin-right: 150px;
+                        }
+
+                        @media screen and (max-width:992px) { 
+                            margin-right: 120px;
+                        }
+
+                        @media screen and (max-width:768px) { 
+                            margin-right: 100px;
+                        }
                     }
 
                     &:nth-child(2) {
                         margin-right: 240px;
+
+                        @media screen and (max-width:1200px) { 
+                            margin-right: 125px;
+                        }
+
+                        @media screen and (max-width:992px) { 
+                            margin-right: 110px;
+                        }
+
+                        @media screen and (max-width:768px) { 
+                            margin-right: 90px;
+                        }
                     }
 
                     &:nth-child(3) {
                         margin-right: 251px;
+
+                        @media screen and (max-width:1200px) { 
+                            margin-right: 140px;
+                        }
+                                                        
+                        @media screen and (max-width:992px) { 
+                            margin-right: 115px;
+                        }
+                            
+                        @media screen and (max-width:768px) { 
+                            margin-right: 95px;
+                        }
                     }
 
                     &:nth-child(4) {
                         margin-right: 73px;
+
+                        @media screen and (max-width:1200px) { 
+                            margin-right: 75px;
+                        }
+                                                        
+                        @media screen and (max-width:992px) { 
+                            margin-right: 62px;
+                        }
+                            
+                        @media screen and (max-width:768px) { 
+                            margin-right: 50px;
+                        }
                     }
                 }
 

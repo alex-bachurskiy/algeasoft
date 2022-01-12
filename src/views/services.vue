@@ -47,6 +47,8 @@ export default {
 
 .services {
 
+  background-color: #fafafa;
+
   &__container {
     max-width: 1236px;
     padding-left: 100px;

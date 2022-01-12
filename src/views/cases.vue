@@ -166,9 +166,36 @@ export default {
         background: linear-gradient(0deg, #000000, #000000);
         margin-bottom: 160px;
 
+        @media screen and (max-width:768px) { 
+            margin-bottom: 200px;
+        }
+
+        @media screen and (max-width:576px) { 
+            margin-bottom: 60px;
+        }
+
         .benefits__component {
             position: relative;
             top: 133px;
+
+            @media screen and (max-width:1200px) { 
+                top: 150px;
+            }
+            
+                        
+            @media screen and (max-width:992px) { 
+                top: 100px;
+            }
+
+            @media screen and (max-width:768px) { 
+                top: 90px;
+            }
+        }
+
+        .container {
+            @media screen and (max-width:1200px) { 
+                width: auto;
+            }
         }
 
         &__container {
@@ -182,6 +209,30 @@ export default {
             margin: 0 auto;
             height: 542px;
             max-width: 1506px;
+
+            @media screen and (max-width:1200px) { 
+                padding-top: 50px;
+                padding-bottom: 50px;
+                padding-left: 50px;
+                height: 565px;
+            }
+
+            @media screen and (max-width:992px) { 
+                height: 525px;
+            }
+
+            @media screen and (max-width:768px) { 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 0;
+            }
+
+            @media screen and (max-width:576px) { 
+                background-size: cover;
+                background-position: center;
+                height: 630px;
+            }
 
             .banner__navigation__container {
 
@@ -201,6 +252,13 @@ export default {
                 
                 margin-bottom: 60px;
 
+                @media screen and (max-width:768px) { 
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+
                 .banner__title {
                     font-weight: 500;
                     font-size: 44px;
@@ -215,7 +273,7 @@ export default {
                     line-height: 130%;
                     letter-spacing: 0.03em;
                     color: #FFFFFF;
-                    width: 423px;
+                    max-width: 423px;
                 }
             }
         }
@@ -227,6 +285,15 @@ export default {
         margin-bottom: 43px;
         max-width: 1506px;
         padding: 0 100px;
+        
+        @media screen and (max-width:1200px) { 
+            padding: 0 50px;
+        }
+
+        @media screen and (max-width:576px) { 
+            padding-right: 20px;
+            padding-left: 20px;
+        }
 
         .our__progects__title {
             width: auto;
@@ -240,6 +307,11 @@ export default {
             padding-bottom: 10px;
             padding-left: 20px;
             margin-bottom: 38px;
+
+            @media screen and (max-width:576px) { 
+                text-align: center;
+                padding-left: 0;
+            }
         }
 
         .our__projects {
@@ -248,11 +320,31 @@ export default {
             justify-content: space-between;
             margin-bottom: 50px;
 
+            @media screen and (max-width:1200px) { 
+                justify-content: space-evenly;
+            }
+
+            @media screen and (max-width:576px) { 
+                flex-direction: column;
+            }
+
             .project-box {
-                    
+                
+                @media screen and (max-width:576px) { 
+                    margin-bottom: 40px;
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+
                 .project {
                     display: flex;
                     margin-bottom: 40px;
+                            
+                    @media screen and (max-width:1200px) { 
+                        flex-direction: column;
+                    }
 
                     &:last-child {
                         margin-bottom: 0;
@@ -260,6 +352,14 @@ export default {
 
                     .project__img {
                         margin-right: 20px;
+                        
+                        @media screen and (max-width:576px) { 
+                            margin-right: 0;
+                        }
+
+                        img {
+                            max-width: 100%;
+                        }
                     }
 
                     .project__container {

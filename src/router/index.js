@@ -56,7 +56,7 @@ export default new Router ({
 			component: customization
 		},
 		{
-			path: 'cloud_servers_with_cpu',
+			path: '/cloud_servers_with_cpu',
 			component: cpu
 		},
 		{

@@ -216,7 +216,6 @@ export default {
 
         background: linear-gradient(0deg, #000000, #000000);
         
-        
         .container {
             @media screen and (max-width:1200px) { 
                 width: auto;
@@ -361,6 +360,9 @@ export default {
                     width: 100%;
                     margin-right: 47px;
 
+                    @media screen and (max-width:1200px) { 
+                        width: 50%;
+                    }
                     
                     @media screen and (max-width:576px) { 
                         display: none;
@@ -387,6 +389,10 @@ export default {
 
                         @media screen and (max-width:1200px) { 
                             padding-right: 100px;
+                        }
+
+                        @media screen and (max-width:992px) { 
+                            padding-right: 10px;
                         }
 
                         @media screen and (max-width:576px) { 

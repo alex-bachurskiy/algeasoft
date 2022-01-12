@@ -8,13 +8,13 @@
                     </h2>
                     <img class="consultation__img" src="@/assets/pictures/horn.png" alt="horn">
                 </div>
-                <div class="consultation__light__container">
-                    <p class="consultation__light__paragraph">
+                <div class="consultation__dark__container">
+                    <p class="consultation__dark__paragraph">
                         Подробно расскажем о наших услугах, <br>
                         видах работ и типовых проектах, рассчитаем стоимость 
                         и подготовим индивидуальное предложение!
                     </p>
-                    <div class="consultation__light__btn">
+                    <div class="consultation__dark__btn">
                         <router-link to="">
                             Связаться с нами
                         </router-link>
@@ -46,7 +46,7 @@
         display: flex;
         height: 150px;
         justify-content: space-between;
-        max-width: 1506px;
+        max-width: 1520px;
         margin: 0 auto;
 
         .consultation__title__container {
@@ -89,7 +89,7 @@
             }
         }
 
-        .consultation__light__container {
+        .consultation__dark__container {
             background-image: url("../assets/pictures/dark.png");
             background-size: cover;
             display: flex;
@@ -114,7 +114,7 @@
                 padding-left: 115px;
             }
 
-            .consultation__light__paragraph {
+            .consultation__dark__paragraph {
 
                 width: 465px;
                 font-size: 16px;
@@ -122,14 +122,14 @@
                 margin-right: 15px;
                 line-height: 130%;
                 letter-spacing: 0.03em;
-                color: #FFF;
+                color: #fff;
 
                 @media screen and (max-width:992px) { 
                     display: none;
                 }
             }
 
-            .consultation__light__btn {
+            .consultation__dark__btn {
 
                 width: 174px;
                 height: 39px;

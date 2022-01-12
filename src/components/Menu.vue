@@ -34,7 +34,7 @@
     margin: 0 auto;
 
     @media screen and (max-width:768px) { 
-      padding: 0 50px;
+      padding: 0 20px;
     }
 
     a.router-link-active, li.router-link-active>a {

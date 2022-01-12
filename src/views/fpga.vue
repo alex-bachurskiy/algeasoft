@@ -210,9 +210,27 @@ export default {
         background: linear-gradient(0deg, #000000, #000000);
         margin-bottom: 160px;
 
+        @media screen and (max-width:576px) { 
+            margin-bottom: 60px;
+        }
+
+        .container {
+            @media screen and (max-width:1200px) { 
+                width: auto;
+            }
+        }
+
         .benefits__component {
             position: relative;
             top: 87px;
+
+            @media screen and (max-width:992px) { 
+                top: 105px;
+            }
+
+            @media screen and (max-width:768px) { 
+                top: 45px;
+            }
         }
 
         &__container {
@@ -225,6 +243,24 @@ export default {
             margin: 0 auto;
             height: 532px;
             max-width: 1506px;
+
+            @media screen and (max-width:1200px) { 
+                padding-top: 50px;
+                padding-bottom: 50px;
+                padding-left: 50px;
+                height: 565px;
+            }
+
+            @media screen and (max-width:768px) { 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 0;
+            }
+
+            @media screen and (max-width:576px) { 
+                height: auto;
+            }
 
             .banner__navigation__container {
 
@@ -244,12 +280,26 @@ export default {
                 
                 margin-bottom: 60px;
 
+                
+                @media screen and (max-width:768px) { 
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+
                 .banner__title {
                     font-weight: 500;
                     font-size: 44px;
                     line-height: 130%;
                     color: #219653;
                     margin-bottom: 10px;
+
+                    @media screen and (max-width:576px) { 
+                        width: auto;
+                        font-size: 35px;
+                        padding: 0 20px;
+                    }
                 }
 
                 .banner__info {
@@ -259,6 +309,14 @@ export default {
                     letter-spacing: 0.03em;
                     color: #FFFFFF;
                     width: 508px;
+
+                    @media screen and (max-width:768px) { 
+                        font-size: 20px;
+                    }
+
+                    @media screen and (max-width:576px) { 
+                        width: 315px;
+                    }
                 }
             }
         }
@@ -270,6 +328,21 @@ export default {
         max-width: 1444px;
         margin: 0 auto;
 
+        @media screen and (max-width:576px) { 
+            padding: 0 20px;
+        }
+
+        .container {
+            @media screen and (max-width:1200px) { 
+                width: auto;
+            }
+
+            
+            @media screen and (max-width:576px) { 
+                text-align: center;
+            }
+        }
+
         .about__fpga {
 
             .about__fpga__title__container {
@@ -277,12 +350,24 @@ export default {
                 border-radius: 5px;
                 margin-bottom: 30px;
 
+                @media screen and (max-width:1200px) { 
+                    padding: 5px 0;
+                }
+
                 .about__fpga__title {
                     font-weight: 500;
                     font-size: 45px;
                     line-height: 53px;
                     color: #FFFFFF;
                     margin: 10px 617px 10px 20px;
+                    
+                    @media screen and (max-width:1200px) { 
+                        margin-right: 110px;
+                    }
+
+                    @media screen and (max-width:576px) { 
+                        margin-right: 20px;
+                    }
                 }
             }
 
@@ -345,6 +430,14 @@ export default {
 
         .fpga__blog__container {
             margin-top: 120px;
+                                
+            @media screen and (max-width:1200px) { 
+                position: relative;
+            }
+
+            @media screen and (max-width:1200px) { 
+                display: none;
+            }
 
             .fpga__blog__title__container {
 
@@ -359,6 +452,10 @@ export default {
             .blog__article__container {
 
                 display: flex;
+                                                    
+                @media screen and (max-width:1200px) { 
+                    flex-wrap: wrap;
+                }
 
                 .blog__article {
 
@@ -371,6 +468,10 @@ export default {
                     position: relative;
                     height: 300px;
                     max-width: 735px;
+
+                    @media screen and (max-width:1200px) { 
+                        margin-bottom: 50px;
+                    }
 
                     .article__info {
 
@@ -471,6 +572,12 @@ export default {
                 margin-top: 50px;
                 display: flex;
                 
+                                                                    
+                @media screen and (max-width:1200px) { 
+                    position: absolute;
+                    top: 315px;
+                }
+
                 .article__btn {
                     display: flex;
                     align-items: center;

@@ -25,7 +25,7 @@
         <Services/>
         <Trust/>
         <Tasks/>
-
+        <Reviews/>
         <Partners/>
         <Light/>
         <Footer/>
@@ -149,6 +149,7 @@ export default {
                         font-weight: 500;
                         color: #219653;
                     }
+                    
                     font-weight: 300;
                     font-size: 44px;
                     line-height: 130%;

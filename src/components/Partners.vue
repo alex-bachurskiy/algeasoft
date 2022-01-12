@@ -65,6 +65,8 @@
             }
             
             .partner__logo {
+                background: #FFFFFF;
+                border-radius: 7px;
                 width: 240px;
                 height: 100px;
                 display: flex;

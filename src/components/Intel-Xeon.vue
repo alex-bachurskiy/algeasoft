@@ -367,6 +367,12 @@
 <style lang="scss" scoped>
 .intel-xeon {
 
+    .container {
+        @media screen and (max-width:1200px) { 
+            width: auto;
+        }
+    }
+
     &__container {
         margin: 0 auto;
         max-width: 1420px;
@@ -374,6 +380,19 @@
         flex-direction: column;
         justify-content: center;
         padding: 0 100px;
+
+        @media screen and (max-width:1200px) { 
+            padding: 0 50px;
+        }
+
+        @media screen and (max-width:768px) { 
+            padding: 0 25px;
+        }
+        
+        @media screen and (max-width: 576px) { 
+            display: none;
+        }
+
         .intel-xeon_configuration__title__container {
                 
             display: flex;
@@ -454,7 +473,7 @@
                     display: flex;
                     color: #333333;
                     padding-top: 13px;
-                    width: 1069px;
+                    max-width: 1069px;
 
                 }
                     
@@ -465,6 +484,14 @@
                     font-weight: 500;
                     font-size: 16px;
                     line-height: 19px;
+
+                    @media screen and (max-width:1200px) { 
+                        margin-right: 20px;
+                    }
+
+                    @media screen and (max-width:992px) { 
+                        margin-right: 10px;
+                    }
 
                     &:first-child {
                         margin-left: 10px;
@@ -482,30 +509,97 @@
                     &:first-child {
                         margin-left: 26px;
                         margin-right: 95px;
+
+                        @media screen and (max-width:1200px) { 
+                            margin-right: 67px;
+                        }
+
+                        @media screen and (max-width:768px) { 
+                            margin-right: 65px;
+                        }
                     }
 
                     &:nth-child(2) {
                         margin-right: 105px;
+
+                        
+                        @media screen and (max-width:1200px) { 
+                            margin-right: 85px;
+                        }
+
+                        @media screen and (max-width:992px) { 
+                            margin-right: 67px;
+                        }
+
+                        @media screen and (max-width:768px) { 
+                            margin-right: 62px;
+                        }
                     }
 
                     &:nth-child(3) {
-                        margin-right: 70px;
+                        margin-right: 67px;
+                        
+                        @media screen and (max-width:1200px) { 
+                            margin-right: 42px;
+                        }
+                        
+                        @media screen and (max-width:992px) { 
+                            margin-right: 25px;
+                        }
+
+                        @media screen and (max-width:768px) { 
+                            margin-right: 30px;
+                        }
                     }
 
                     &:nth-child(4) {
                         margin-right: 100px;
+
+                        @media screen and (max-width:1200px) { 
+                            margin-right: 70px;
+                        }
+
+                        
+                        @media screen and (max-width:992px) { 
+                            margin-right: 42px;
+                        }
                     }
 
                     &:nth-child(5) {
                         margin-right: 150px;
+
+                        @media screen and (max-width:1200px) { 
+                            margin-right: 135px;
+                        }
+
+                        @media screen and (max-width:992px) { 
+                            margin-right: 82px;
+                        }
+
+                        
+                        @media screen and (max-width:768px) { 
+                            margin-right: 78px;
+                        }
                     }
 
                     &:nth-child(6) {
                         margin-right: 160px;
+
+                        @media screen and (max-width:1200px) { 
+                            margin-right: 120px;
+                        }
+
+                        @media screen and (max-width:992px) { 
+                            margin-right: 59px;
+                        }
                     }
 
                     &:nth-child(7) {
                         margin-right: 100px;
+
+                        @media screen and (max-width:1200px) { 
+                            margin-right: 30px;
+                        }
                     }
                 }
 

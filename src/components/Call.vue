@@ -1,114 +1,98 @@
 <template>
-    <div class="technical_support">
-        <Header/>
-        <Menu/>
-        <div class="container">
-            <div class="technical_support__container">
-                <div class="technical_support__navigation__container">
-                    <router-link class="menu-item" to="/">Главная</router-link> 
-                    <span> / </span>
-                    <router-link class="menu-item" to="/technical_support">Техническая поддержка</router-link>
-                </div>
-                <div class="technical_support__title__container">
-                    <h2 class="technical_support__title">
-                        Техническая поддержка
-                    </h2>
-                    <p class="technical_support__paragraph">
-                        Если у Вас есть технические или финансовые вопросы заполните форму ниже.
-                    </p>
-                </div>
-                <div class="technical_support__form__container">
-                    <form class="technical_support__form">
-                        <input class="input" type="text" name="question" placeholder="Имя *" required>
-                        <input class="input" type="text" name="question" placeholder="Ваш e-mail" >
-                        <input class="input" type="text" name="question" placeholder="Телефон">
-                        <input class="input" type="text" name="question" placeholder="Ваше сообщение">
-                        <label class="custom-checkbox">
-                            <input required type="checkbox" value="value-1">
-                            <span class="check__text">
-                                Я даю Согласие на обработку персональных данных на условиях, 
-                                определенных Политикой конфиденциальности
-                            </span>
-                        </label>
-
-                        <input type="submit" value="Заказать звонок" class="submit">
-                    </form>
-                </div>
+    <div class="modal-shadow">
+        <div class="modal">
+            <div class="modal-close" @click="closeModal">
+                x
+            </div>
+            <div class="modal__title__container">
+                <h2 class="modal__title">
+                    Заказать обратный звонок
+                </h2>
+                <p class="modal__paragraph">
+                    Мы перезвоним Вам в рабочее время.
+                </p>
+            </div>
+            <div class="modal__form__container">
+                <form class="modal__form">
+                    <input class="input" type="text" name="question" placeholder="Имя *" required>
+                    <input class="input" type="text" name="question" placeholder="Ваш e-mail" >
+                    <input class="input" type="text" name="question" placeholder="Телефон">
+                    <input class="input" type="text" name="question" placeholder="Ваше сообщение">
+                    <label class="custom-checkbox">
+                        <input required type="checkbox" value="value-1">
+                        <span class="check__text">
+                            Я даю Согласие на обработку персональных данных на условиях, 
+                            определенных Политикой конфиденциальности
+                        </span>
+                    </label>
+                    <input type="submit" value="Заказать звонок" class="submit">
+                </form>
             </div>
         </div>
-        <Footer/>
     </div>
 </template>
 
+import Window from "../components/Thanks";
+
 <script>
-import Header from "../components/Header";
-import Menu from "../components/Menu";
-import Footer from "../components/Footer";
+    export default {
+        name: "ModalWindow",
 
-
-export default {
-    name: "technical_support",
-    components: {
-        Header,
-        Menu,
-        Footer
+        methods: {
+            closeModal () {
+                // https://ru.vuejs.org/v2/api/#vm-emit
+                this.$emit('showPopup', false)
+            }
+        }
     }
-};
 </script>
 
-<style lang="scss">
-.technical_support {
+<style scoped lang="scss">
 
-    &__container {
+    .modal {
+        display: flex;
+        position: absolute;
+        flex-wrap: wrap;
+        width: 377px;
+        padding: 35px;
+        background: #FFFFFF;
+        border-radius: 7px;
+        right: 200px;
+        top: 180px;
+        
+        .modal-close {
+            color: #333333;
+            font-weight: 900;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            left: 355px;  
+        }
 
-        padding: 100px 0 105px 100px;
-
-        @media screen and (max-width:576px) {
+        .modal__title__container {
+            color: #333333;
             display: flex;
-            padding: 50px 0 105px 0;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-        }
+            margin-bottom: 20px;
 
-        .technical_support__navigation__container {
-            font-size: 16px;
-            line-height: 110%;
-            letter-spacing: 0.03em;
-            color: rgba(0, 0, 0, 0.25);
-            margin-bottom: 12px;
-
-            .menu-item {
-                color: rgba(0, 0, 0, 0.25);
+            .modal__title {
+                font-weight: 900;
+                font-size: 22px;
+                line-height: 26px;
+                margin-bottom: 5px;
             }
-        }
-
-        .technical_support__title__container {
-            margin-bottom: 53px;
-
-            
-            @media screen and (max-width:576px) {
-                text-align: center;
-            }
-
-            .technical_support__title {
-                font-weight: 500;
-                font-size: 44px;
-                line-height: 130%;
-                color: #219653;
-            }
-
-            .technical_support__paragraph {
+            .modal__paragraph {
+                font-weight: 400;
                 font-size: 16px;
                 line-height: 130%;
                 letter-spacing: 0.03em;
-                color: #333333;
             }
         }
 
-        .technical_support__form__container {
+        .modal__form__container {
 
-            .technical_support__form {
+            .modal__form {
                 display: flex;
                 flex-direction: column;
 
@@ -230,5 +214,4 @@ export default {
             }
         }
     }
-}
 </style>

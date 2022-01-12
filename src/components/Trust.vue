@@ -101,7 +101,10 @@
             padding: 50px;
         }
 
-
+        @media screen and (max-width:576px) { 
+            padding-right: 20px;
+            padding-left: 20px;
+        }
 
         .trusts__info__container {
 
