@@ -59,14 +59,46 @@ import Window from "../components/Thanks";
         border-radius: 7px;
         right: 200px;
         top: 180px;
+        z-index: 777;
+
+        @media screen and (max-width:1200px) { 
+            top: 162px;
+            left: 590px;
+            padding: 25px;
+        }
+
+        @media screen and (max-width:992px) { 
+            left: 425px;
+            top: 180px;
+        }
         
+        @media screen and (max-width:768px) { 
+            left: 375px;
+        }
+        
+        @media screen and (max-width:576px) { 
+            width: 340px;
+            left: 20px;
+            top: 305px;
+            padding-right: 20px;
+            padding-left: 20px;
+            justify-content: center;
+            position: static;
+        }
+
         .modal-close {
             color: #333333;
             font-weight: 900;
             cursor: pointer;
             position: absolute;
             top: 10px;
-            left: 355px;  
+            left: 355px; 
+
+            @media screen and (max-width:576px) { 
+                top: 250px;
+                left: 350px;
+                font-size: 20px; 
+            } 
         }
 
         .modal__title__container {
@@ -75,6 +107,10 @@ import Window from "../components/Thanks";
             flex-direction: column;
             align-items: center;
             margin-bottom: 20px;
+            
+            @media screen and (max-width:576px) { 
+                text-align: center;
+            } 
 
             .modal__title {
                 font-weight: 900;
@@ -103,6 +139,14 @@ import Window from "../components/Thanks";
                     border-radius: 3px;
                     margin-bottom: 20px;
                     max-width: 400px;
+
+                    @media screen and (max-width:1200px) { 
+                        margin-bottom: 15px;
+                    }
+
+                    @media screen and (max-width:576px) {
+                        max-width: 310px;
+                    }
 
                     &::placeholder {
                         font-size: 16px;
@@ -205,11 +249,10 @@ import Window from "../components/Thanks";
                     margin-top: 30px;
                     max-width: 300px;
 
-                    
-                    @media screen and (max-width:576px) {
-                        margin-right: auto;
-                        margin-left:  auto;
+                    @media screen and (max-width:1200px) { 
+                        margin-bottom: 15px;
                     }
+
                 }
             }
         }

@@ -38,13 +38,13 @@ export default {
 
 	.bm-burger-button {
 		display: none;
-      	position: absolute;
-      	width: 36px;
+    position: absolute;
+    width: 36px;
 		height: 30px;
 		left: 20px;
 		top: 36px;
 		cursor: pointer;
-    }
+  }
 
 	@media screen and (max-width: 576px) {
 		.bm-burger-button {
@@ -52,29 +52,34 @@ export default {
 		}
 	}
 	
-    .bm-burger-bars {
-      	background-color: #219653;
-    }
-    .line-style {
+  .bm-burger-bars {
+    	background-color: #219653;
+  }
+  
+  .line-style {
 		position: absolute;
 		height: 20%;
 		left: 0;
 		right: 0;
-    }
-    .cross-style {
+  }
+
+  .cross-style {
 		position: absolute;
 		top: 20px;
 		right: 75px;
 		cursor: pointer;
-    }
-    .bm-cross {
-      	ackground: #11964b;
-    }
-    .bm-cross-button {
+  }
+
+  .bm-cross {
+    background: #11964b;
+  }
+  
+  .bm-cross-button {
 		height: 24px;
 		width: 24px;
-    }
-    .bm-menu {
+  }
+
+  .bm-menu {
 		height: 100%; /* 100% Full-height */
 		width: 0; /* 0 width - change this with JavaScript */
 		position: fixed; /* Stay in place */
@@ -85,27 +90,29 @@ export default {
 		overflow-x: hidden; /* Disable horizontal scroll */
 		padding-top: 50px; /* Place content 60px from the top */
 		transition: 0.3s; /*0.5 second transition effect to slide in the sidenav*/
-    }
+  }
  
-    .bm-overlay {
-      	background: rgba(0, 0, 0, 0);
-    }
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0);
+  }
 
-    .bm-item-list {
+  .bm-item-list {
 		color: #b8b7ad;
 		margin-left: 15%;
 		font-size: 20px;
-    }
-    .bm-item-list > * {
+  }
+
+  .bm-item-list > * {
 		display: flex;
 		text-decoration: none;
 		padding: 0.7em;
-    }
-    .bm-item-list > * > span {
+  }
+
+  .bm-item-list > * > span {
 		margin-left: 20px;
 		font-weight: 700;
 		text-transform: uppercase;
 		color: #219653;
-    }
+  }
 </style>
 

@@ -18,6 +18,11 @@ import services from "../views/services";
 import support from "../views/support";
 
 export default new Router ({
+	
+	scrollBehavior(to, from, savedPosition) {
+		return { x: 0, y: 0 }
+	},
+
 	routes: [
 		{
 			path: '/',

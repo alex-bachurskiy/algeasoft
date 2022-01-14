@@ -25,7 +25,6 @@
         <Services/>
         <Trust/>
         <Tasks/>
-        <Reviews/>
         <Partners/>
         <Light/>
         <Footer/>
@@ -181,8 +180,13 @@ export default {
                     margin-bottom: 25px;
                     width: 351px;
 
+                    @media screen and (max-width:992px) { 
+                        width: 382px;
+                    }
+
                     @media screen and (max-width:768px) { 
                         font-size: 20px;
+                        width: auto;
                     }
 
                     @media screen and (max-width:576px) { 

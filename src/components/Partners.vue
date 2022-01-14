@@ -78,9 +78,21 @@
                     margin-right: 0;
                 }
 
-                
+                @media screen and (max-width:1200px) { 
+                    margin-bottom: 40px;
+
+                    &:nth-child(4),
+                    &:nth-child(5) {
+                        margin-bottom: 0;
+                    }
+                }
+
                 @media screen and (max-width:556px) { 
                     margin-right: 0;
+
+                    &:nth-child(4) {
+                        margin-bottom: 40px;
+                    }
                 }
             }
 

@@ -259,6 +259,10 @@ export default {
                     text-align: center;
                 }
 
+                @media screen and (max-width:576px) { 
+                    padding: 0 20px;
+                }
+
                 .banner__title {
                     font-weight: 500;
                     font-size: 44px;

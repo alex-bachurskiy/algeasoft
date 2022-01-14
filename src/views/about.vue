@@ -83,6 +83,12 @@ export default {
     .banner {
         background: linear-gradient(0deg, #000000, #000000);
 
+        .container {
+            @media screen and (max-width:1200px) { 
+                width: auto;
+            }
+        }
+
         &__container {
         background-image: url(../assets/pictures/office.png);
         background-position-x: 665px;
@@ -92,11 +98,39 @@ export default {
         padding-bottom: 100px;
         padding-left: 100px;
         margin: 0 auto;
-        max-width: 1506px;
+
+        @media screen and (max-width:1200px) {
+            background-size: contain; 
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+            background-position-y: top;
+        }
+
+        @media screen and (max-width:992px) { 
+            background-position-y: center;
+        }
+
+        @media screen and (max-width:768px) { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0;
+            background-size: cover;
+        }
+
+        @media screen and (max-width:576px) { 
+            height: auto;
+        }
         
         .banner__navigation__container {
 
             color: rgba(255, 255, 255, 0.25);
+
+            @media screen and (max-width:576px) { 
+                background-color: rgba(44, 62, 80, 0.5);
+                color: rgba(255, 255, 255, 0.7);
+            }
 
             .menu-item {
                 font-weight: 400;
@@ -104,10 +138,27 @@ export default {
                 font-size: 16px;
                 line-height: 110%;
                 letter-spacing: 0.03em;
+
+                @media screen and (max-width:576px) { 
+                    background-color: rgba(44, 62, 80, 0.5);
+                    color: rgba(255, 255, 255, 0.7);
+                }
             }
         }
 
         .banner__text {
+
+            @media screen and (max-width:768px) { 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            @media screen and (max-width:576px) { 
+                background-color: rgba(44, 62, 80, 0.5);
+                padding-bottom: 20px;
+            }
 
             .banner__title {
 
@@ -116,7 +167,17 @@ export default {
                 line-height: 130%;
                 color: #FAFAFA;
                 margin-bottom: 26px;
-                width: 826px;
+                max-width: 826px;
+
+                @media screen and (max-width:576px) { 
+                    width: auto;
+                    font-size: 35px;
+                    padding: 0 20px;
+
+                    br {
+                        display: none;
+                    }
+                }
 
                 span {
                     color: #219653;
@@ -130,7 +191,7 @@ export default {
                 line-height: 130%;
                 letter-spacing: 0.03em;
                 color: #FFFFFF;
-                width: 700px;
+                max-width: 700px;
             }
         }
     }
@@ -141,13 +202,32 @@ export default {
     justify-content: center;
     padding-top: 40px;
     padding-left: 100px;
+    margin-bottom: 100px;
+    
+    @media screen and (max-width:1200px) {
+        padding-right: 50px;
+        padding-left: 50px;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width:576px) {
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-bottom: 40px;
+    }
 
     .about-us__information {
-
         display: flex;
         flex-direction: column;
         margin-right: 100px;
         width: 700px;
+            
+        @media screen and (max-width:1200px) {
+            margin-right: 0;
+            margin-bottom: 50px;
+            width: auto;
+        }
 
         .about-us__title {
             font-weight: 500;
@@ -155,6 +235,10 @@ export default {
             line-height: 53px;
             color: #219653;
             margin-bottom: 24px;
+
+            @media screen and (max-width:1200px) {
+                text-align: center;
+            }
         }
         
         .about-us__paragraph {

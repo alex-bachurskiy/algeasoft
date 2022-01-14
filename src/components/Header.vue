@@ -58,8 +58,8 @@ export default {
     background: #FFFFFF;
 
     @media screen and (max-width:576px) { 
-      height: 250px;
-      margin: 15px;
+      height: auto;
+      padding: 15px;
     }
 
     &__container {
