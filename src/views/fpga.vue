@@ -267,20 +267,12 @@ export default {
                 color: rgba(255, 255, 255, 0.25);
                 margin-bottom: 22px;
 
-                @media screen and (max-width:576px) { 
-                    color: rgba(255, 255, 255, 0.7);
-                }
-
                 .menu-item {
                     font-weight: 400;
                     color: rgba(255, 255, 255, 0.25);
                     font-size: 16px;
                     line-height: 110%;
                     letter-spacing: 0.03em;
-
-                    @media screen and (max-width:576px) { 
-                        color: rgba(255, 255, 255, 0.7);
-                    }
                 }
             }
 

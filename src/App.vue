@@ -17,6 +17,10 @@ export default {
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
   body {
     background: #E5E5E5;
+
+    @media screen and (max-width:576px) { 
+      background: #e5e5e583;
+    }
   }
   *,
   *::before,
