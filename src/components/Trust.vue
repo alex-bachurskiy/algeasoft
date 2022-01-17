@@ -129,6 +129,10 @@
                     max-width: 750px;
                     margin-bottom: 30px;
                 }
+
+                @media screen and (max-width:576px) { 
+                    font-size: 44px;
+                }
             }
                         
             .trusts__paragraph {

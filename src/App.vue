@@ -19,7 +19,7 @@ export default {
     background: #E5E5E5;
 
     @media screen and (max-width:576px) { 
-      background: #e5e5e583;
+      background: #f0f0f0;
     }
   }
   *,

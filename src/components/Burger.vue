@@ -66,7 +66,7 @@ export default {
   .cross-style {
 		position: absolute;
 		top: 20px;
-		right: 75px;
+		right: 0;
 		cursor: pointer;
   }
 

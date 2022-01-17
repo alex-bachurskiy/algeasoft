@@ -127,22 +127,12 @@ export default {
 
             color: rgba(255, 255, 255, 0.25);
 
-            @media screen and (max-width:576px) { 
-                background-color: rgba(44, 62, 80, 0.5);
-                color: rgba(255, 255, 255, 0.7);
-            }
-
             .menu-item {
                 font-weight: 400;
                 color: rgba(255, 255, 255, 0.25);
                 font-size: 16px;
                 line-height: 110%;
                 letter-spacing: 0.03em;
-
-                @media screen and (max-width:576px) { 
-                    background-color: rgba(44, 62, 80, 0.5);
-                    color: rgba(255, 255, 255, 0.7);
-                }
             }
         }
 
@@ -153,11 +143,6 @@ export default {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-            }
-
-            @media screen and (max-width:576px) { 
-                background-color: rgba(44, 62, 80, 0.5);
-                padding-bottom: 20px;
             }
 
             .banner__title {
