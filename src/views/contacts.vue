@@ -116,10 +116,15 @@ export default {
 
             .menu-item {
                 color: rgba(0, 0, 0, 0.25);
+
+                @media screen and (max-width:576px) { 
+                    color: #f1f2f6;
+                }
             }
 
             @media screen and (max-width:576px) { 
                 text-align: center;
+                color: #f1f2f6;
             }
         }
 
