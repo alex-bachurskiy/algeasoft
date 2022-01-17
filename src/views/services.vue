@@ -72,16 +72,8 @@ export default {
           text-align: center;
         }
 
-        @media screen and (max-width:576px) { 
-          color: rgba(255, 255, 255, 0.7);
-        }
-
         .menu-item {
           color: rgba(0, 0, 0, 0.25);
-
-          @media screen and (max-width:576px) { 
-            color: rgba(255, 255, 255, 0.7);
-          }
         }
       }
     }
